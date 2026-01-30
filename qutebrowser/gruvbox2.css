@@ -1,0 +1,80 @@
+
+/* Gruvbox Dark CSS Injection */
+:root {
+    --gruvbox-bg: #282828;
+    --gruvbox-fg: #ebdbb2;
+    --gruvbox-red: #fb4934;
+    --gruvbox-green: #b8bb26;
+    --gruvbox-yellow: #fabd2f;
+    --gruvbox-blue: #83a598;
+    --gruvbox-purple: #d3869b;
+    --gruvbox-aqua: #8ec07c;
+    --gruvbox-orange: #fe8019;
+    --gruvbox-gray: #928374;
+}
+
+/* Force Gruvbox colors on all elements */
+* {
+    background-color: var(--gruvbox-bg) !important;
+    color: var(--gruvbox-fg) !important;
+    border-color: var(--gruvbox-gray) !important;
+}
+
+/* Links */
+a, a:link, a:visited {
+    color: var(--gruvbox-blue) !important;
+}
+
+a:hover, a:active {
+    color: var(--gruvbox-aqua) !important;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--gruvbox-yellow) !important;
+}
+
+/* Code blocks */
+pre, code, kbd, samp {
+    background-color: #1d2021 !important;
+    color: var(--gruvbox-aqua) !important;
+    border: 1px solid var(--gruvbox-gray) !important;
+}
+
+/* Input fields */
+input, textarea, select, button {
+    background-color: var(--gruvbox-dark1) !important;
+    border: 1px solid var(--gruvbox-gray) !important;
+    color: var(--gruvbox-fg) !important;
+}
+
+/* Tables */
+table {
+    border-color: var(--gruvbox-gray) !important;
+}
+
+th {
+    background-color: var(--gruvbox-dark1) !important;
+}
+
+td {
+    border-color: var(--gruvbox-gray) !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 12px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--gruvbox-dark1) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gruvbox-dark3) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gruvbox-dark4) !important;
+}
+
