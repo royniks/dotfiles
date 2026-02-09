@@ -43,11 +43,15 @@ bindsym $mod+Shift+p exec swaylock \
 ### Output configuration
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg  /home/zeke/Pictures/gruvbox/anime-girl2.png fill
+#output * bg  /home/zeke/Pictures/gruvbox/flowers.jpg fill
 
 
 # autostart 
 exec_always --no-startup-id autotiling
+
+exec --no-startup-id swww-daemon
+exec --no-startup-id swww img "$(cat ~/.cache/wal/wal)"
+exec --no-startup-id wal -R
 
 
 ### Key bindings
@@ -61,7 +65,7 @@ exec_always --no-startup-id autotiling
     bindsym $mod+q kill
 
     # Start your launcher
-    bindsym $mod+d exec wofi --show drun
+    bindsym $mod+d exec rofi -show drun
 
     # webapps 
     bindsym $mod+y exec --no-startup-id chromium --app=https://www.youtube.com
@@ -71,8 +75,6 @@ exec_always --no-startup-id autotiling
     bindsym $mod+u exec --no-startup-id chromium --app=https://discord.com/channels/@me
 
     bindsym $mod+o exec --no-startup-id chromium --app=https://music.youtube.com/
-
-
 
 
 
@@ -236,7 +238,7 @@ default_border normal
 
 
 ### SwayFX blur ###
-blur enable
+blur diabled
 blur_radius 2
 blur_passes 2
 
@@ -274,6 +276,7 @@ for_window [app_id="org.kde.okular"] {
 #    blur enable
 #    opacity 0.92
 #}
+
 
 
 
